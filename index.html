@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Espaço Florescer - Relatórios</title>
+</head>
+<body>
+  <header>
+    <img src="./Logos decorativas florescer.png" alt="Logo Espaço Florescer" id="logo">
+    <h1>Espaço Florescer - Relatórios</h1>
+  </header>
+
+  <main>
+    <section id="form-section">
+      <h2>Adicionar Relatório</h2>
+      <form id="report-form">
+        <label for="student-name">Nome do Aluno:</label>
+        <input type="text" id="student-name" placeholder="Digite o nome do aluno" required>
+
+        <label for="class">Turma:</label>
+        <input type="text" id="class" placeholder="Digite a turma do aluno" required>
+
+        <label for="teacher-name">Professor(a):</label>
+        <input type="text" id="teacher-name" placeholder="Digite o seu nome" required>
+
+        <label for="report-type">Tipo de Relatório:</label>
+        <select id="report-type">
+          <option value="individual">Individual</option>
+          <option value="turma">Turma</option>
+        </select>
+
+        <label for="report-text">Relatório:</label>
+        <textarea id="report-text" rows="10" placeholder="Digite o relatório aqui" required></textarea>
+
+        <button type="submit">Salvar Relatório</button>
+      </form>
+    </section>
+
+    <section id="reports-section">
+      <h2>Relatórios Registrados</h2>
+      <div id="reports"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Espaço Florescer</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
